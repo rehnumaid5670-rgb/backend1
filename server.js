@@ -62,7 +62,7 @@ app.use("/api/user", userRoutes);
 app.use("/api/books", bookRoutes);
 app.use("/api/adminpanel", adminRoutes);
 app.use("/api/card", cardRoutes);
-app.use("/api/feedback", feedbackRoutes);
+app.use("/api/feedbackRoutes", feedbackRoutes);
 // app.use("/api/return", returnRoutes);
 app.use("/api/ebook", ebookRoutes);
 app.use("/api/media", catalogueRoutes);
