@@ -1,7 +1,7 @@
 const User = require("../models/User");
 const bcrypt = require("bcryptjs");
 const jwt = require("jsonwebtoken");
-const { registerUser } = require("../../frontend/src/service/authservice");
+// const { registerUser } = require("../../frontend/src/service/authservice");
 const login = require("./Logincontroller");
 
 exports.register = async(req,res)=>{
@@ -58,5 +58,7 @@ exports.login = async(req,res)=>{
   }catch(error){
     res.status(500).json({error:error.message});
   }
-  module.exports = {registerUser, login}
-};
+  module.exports = {
+  register: exports.register,
+  login: exports.login
+}}
